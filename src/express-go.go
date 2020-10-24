@@ -5,8 +5,9 @@ import (
 )
 
 /*
-#cgo CFLAGS: -I/usr/local/include/node
-#cgo LDFLAGS: -L. -lnode_api
+#cgo linux CFLAGS: -I/usr/include/nodejs/src
+#cgo macos CFLAGS: -I/usr/local/include/node
+#cgo macos LDFLAGS: -L. -lnode_api
 
 #include <node_api.h>
 */
@@ -32,11 +33,11 @@ func Method(env NapiEnv, info NapiCallbackInfo) NapiValue {
 
 // Init addon function
 func Init(env NapiEnv, exports NapiValue) NapiValue {
-	var status NapiStatus
+	// var status NapiStatus
 	desc := C.napi_property_descriptor{
 		C.CString("hello"),
 		nil,
-		(C.napi_callback)(unsafe.Pointer(Method)),
+		(C.napi_callback)(unsafe.Pointer(&Method)),
 		nil,
 		nil,
 		nil,

@@ -4,13 +4,15 @@
   "description": "Native implementation of express.js",
   "dependencies": {
     "bindings": "*",
-    "cmake-js": "2",
-    "nan": "2",
-    "napi": "^0.0.0"
+    "cmake-js": "2"
   },
   "scripts": {
     "test": "mocha ./tests",
-    "install": "cmake-js compile"
+    "install": "cmake-js compile",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "devDependencies": {
     "mocha": "*"

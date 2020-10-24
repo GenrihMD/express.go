@@ -36,7 +36,7 @@ func Init(env NapiEnv, exports NapiValue) NapiValue {
 	desc := C.napi_property_descriptor{
 		C.CString("hello"),
 		nil,
-		(C.napi_callback)(unsafe.Pointer(&Method)),
+		(C.napi_callback)(unsafe.Pointer(Method)),
 		nil,
 		nil,
 		nil,

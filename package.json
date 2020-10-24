@@ -1,19 +1,18 @@
-
 {
-    "name": "express-go",
-    "version": "0.1.0",
-    "description": "Native implementation of express.js",
-    "dependencies": {
-      "bindings": "*",
-      "cmake-js": "2",
-      "nan": "2",
-      "napi": "^0.0.0"
-    },
-    "scripts": {
-      "test": "mocha ./tests",
-      "install": "cmake-js compile"
-    },
-    "devDependencies": {
-      "mocha": "*"
-    }
+  "name": "express-go",
+  "version": "0.1.0",
+  "description": "Native implementation of express.js",
+  "dependencies": {
+    "bindings": "*",
+    "cmake-js": "2",
+    "nan": "2",
+    "napi": "^0.0.0"
+  },
+  "scripts": {
+    "test": "mocha ./tests",
+    "install": "cmake-js compile"
+  },
+  "devDependencies": {
+    "mocha": "*"
   }
+}

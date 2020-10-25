@@ -2,16 +2,16 @@
   "name": "express-go",
   "version": "0.1.0",
   "main": "index.js",
+  "private": true,
+  "gypfile": true,
+  "license": "BSD 3-Clause License",
   "description": "Native implementation of express.js",
+  "author": "laamin <genrih.md@gmail.com>",
   "dependencies": {
     "bindings": "*"
   },
   "scripts": {
     "test": "node ./",
     "preinstall": "go build -a -x -o src/libexpress.a -buildmode=c-archive ./src"
-  },
-  "devDependencies": {
-    "mocha": "*"
-  },
-  "gypfile": true
+  }
 }

@@ -1,19 +1,17 @@
 {
   "name": "express-go",
   "version": "0.1.0",
+  "main": "index.js",
   "description": "Native implementation of express.js",
   "dependencies": {
     "bindings": "*"
   },
   "scripts": {
-    "test": "mocha ./tests",
-    "install": "cmake-js compile",
-    "preinstall": "npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.4"
+    "test": "node ./",
+    "preinstall": "go build -a -x -o src/libexpress.a -buildmode=c-archive ./src"
   },
   "devDependencies": {
     "mocha": "*"
-  }
+  },
+  "gypfile": true
 }

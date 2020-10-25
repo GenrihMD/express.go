@@ -1,1 +1,5 @@
-module.exports = require("bindings")("express");
+const express = require("bindings")("express")
+
+console.log( express )
+
+module.exports = express

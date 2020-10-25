@@ -6,8 +6,8 @@ import (
 
 /*
 #cgo linux CFLAGS: -I/usr/include/nodejs/src
-#cgo macos CFLAGS: -I/usr/local/include/node
-#cgo macos LDFLAGS: -L. -lnode_api
+#cgo darwin CFLAGS: -I/usr/local/include/node
+#cgo darwin LDFLAGS: -L. -lnode_api
 
 #include <node_api.h>
 */

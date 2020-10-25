@@ -1,1 +1,1 @@
-module.exports = require("bindings")("express-go");
+module.exports = require("bindings")("express");

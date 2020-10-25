@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "description": "Native implementation of express.js",
   "dependencies": {
-    "bindings": "*",
-    "cmake-js": "2"
+    "bindings": "*"
   },
   "scripts": {
     "test": "mocha ./tests",

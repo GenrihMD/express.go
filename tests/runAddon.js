@@ -1,1 +1,1 @@
-var addon = require("bindings")("express-go");
+var addon = require("bindings")("express");

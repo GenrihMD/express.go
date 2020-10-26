@@ -14,18 +14,6 @@ import (
 */
 import "C"
 
-// NapiValue is binding to C.napi_value
-type NapiValue = C.napi_value
-
-// NapiEnv is binding to C.napi_env
-type NapiEnv = C.napi_env
-
-// NapiStatus is binding to C.napi_status
-type NapiStatus = C.napi_status
-
-// NapiCallbackInfo is binding to C.napi_callback_info
-type NapiCallbackInfo = C.napi_callback_info
-
 //export Method
 func Method(env C.napi_env, info C.napi_callback_info) C.napi_value {
 	var res C.napi_value

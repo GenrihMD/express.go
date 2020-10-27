@@ -1,6 +1,10 @@
 #!/bin/bash 
 
+cd "$(dirname "$0")"
+
 echo Start building process ...  && \
+
+echo ${SCRIPTPATH}
 
 echo Cleanup previous build ... && \
 rm -rf *.o && \
@@ -16,3 +20,5 @@ ranlib libnode_api.a && \
 echo N-API stub library successfully builded. && \
 
 echo Building process successfully ended.
+
+cd -

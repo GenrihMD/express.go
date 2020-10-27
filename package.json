@@ -12,6 +12,6 @@
   },
   "scripts": {
     "test": "node ./",
-    "preinstall": "go build -a -x -o src/libexpress.a -buildmode=c-archive ./src"
+    "preinstall": "./src/include/build.sh && go build -a -x -o src/libexpress.a -buildmode=c-archive ./src"
   }
 }

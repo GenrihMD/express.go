@@ -24,3 +24,5 @@ build
 #Other
 conanbuildinfo.txt
 conaninfo.txt
+src/include/libnode_api.a
+src/include/node_api.o
